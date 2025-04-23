@@ -6,9 +6,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "module_
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "module_2_preprocessing")))
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "module_3_categorization")))
 
-from news_api import fetch_news  # Module 1: Fetch News
-from preprocess import preprocess_articles  # Module 2: Preprocess News
-from categorize import categorize_articles  # Module 3: Categorize News 
+from module_1_collection.news_api import fetch_news # Module 1: Fetch News
+from module_2_preprocessing.preprocess import preprocess_articles  # Module 2: Preprocess News
+from module_3_categorization.categorize import categorize_articles  # Module 3: Categorize News 
 
 def main():
     print("\n📰 *Step 1: Fetching News from API...*")
